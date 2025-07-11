@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamilton Cigars - Indulge in Luxury. Ignite Excellence.</title>
+    <meta name="description" content="Premium luxury cigars crafted with tradition and excellence. Experience the finest tobacco blends and join our exclusive VIP membership.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="Hamilton Cigars Logo" class="nav-logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="flavors.html" class="nav-link">Flavors</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-cta">
+                <a href="#newsletter" class="cta-button">Join Our Newsletter</a>
+                <a href="#shop-preview" class="cta-button secondary">Explore Collection</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="flavor-teasers" id="shop-preview">
+        <div class="container">
+            <h2 class="section-title">Our Signature Collection</h2>
+            <div class="flavor-grid">
+                <div class="flavor-card">
+                    <div class="flavor-image">
+                        <img src="images/cigar1.jpg" alt="Classic Blend Cigar">
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Classic Blend</h3>
+                        <p>Rich, smooth, and timeless.</p>
+                    </div>
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">
+                        <img src="images/cigar2.jpg" alt="Premium Reserve Cigar">
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Premium Reserve</h3>
+                        <p>Bold complexity for the connoisseur.</p>
+                    </div>
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">
+                        <img src="images/cigar3.jpg" alt="Limited Edition Cigar">
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Limited Edition</h3>
+                        <p>Exclusive craftsmanship meets luxury.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Connected</h2>
+                <p>Be the first to know about new releases, exclusive events, and member-only experiences.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="submit-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo.png" alt="Hamilton Cigars Logo" class="footer-logo">
+                    <p>Premium luxury cigars crafted with tradition and excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                           <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="flavors.html">Flavors</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:orders@hamiltoncigars.com">orders@hamiltoncigars.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hamilton Cigars. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Newsletter form
+        const newsletterForm = document.querySelector('.newsletter-form');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for subscribing to Hamilton Cigars newsletter!');
+            newsletterForm.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

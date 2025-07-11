@@ -1,0 +1,1666 @@
+/* Hamilton Cigars - Main Stylesheet */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo-img {
+    height: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #D4AF37;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 80px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.hero-slogan {
+    font-family: 'Playfair Display', serif;
+    color: #D4AF37;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 2rem;
+    line-height: 1.2;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #D4AF37;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+}
+
+.cta-button.secondary:hover {
+    background-color: #D4AF37;
+    color: #000;
+}
+
+/* Main Content (for shop page) */
+.main-content {
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #D4AF37;
+    margin-bottom: 3rem;
+}
+
+/* Flavor Teasers */
+.flavor-teasers {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.flavor-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.flavor-card:hover {
+    transform: translateY(-5px);
+}
+
+.flavor-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.flavor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flavor-content {
+    padding: 1.5rem;
+}
+
+.flavor-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 0.5rem;
+}
+
+.flavor-content p {
+    color: #ccc;
+}
+
+/* Product Grid (for shop page) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.product-card {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-content {
+    padding: 1.5rem;
+}
+
+.product-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 0.5rem;
+}
+
+.product-content p {
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.product-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #D4AF37;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.product-btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Placeholder message */
+.placeholder-message {
+    text-align: center;
+    background-color: #222;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.placeholder-message h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.placeholder-message p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.newsletter-content p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    font-family: 'Playfair Display', serif;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #D4AF37;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+
+/* Additional CSS for About, Flavors, and Contact Pages */
+
+/* Active Navigation Link */
+.nav-link.active {
+    color: #D4AF37;
+}
+
+/* Story Section (About Page) */
+.story-section {
+    padding: 80px 0;
+
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+}
+
+.story-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.story-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Craftsmanship Section (About Page) */
+.craftsmanship-section {
+    padding: 80px 0;
+}
+
+.craftsmanship-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.craftsmanship-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+}
+
+.craftsmanship-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.craftsmanship-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Values Section (About Page) */
+.values-section {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.values-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    margin-bottom: 1rem;
+}
+
+.value-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.value-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.value-card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Team Section (About Page) */
+.team-section {
+    padding: 80px 0;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-description {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 1.5rem;
+}
+
+.member-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 0.5rem;
+}
+
+.member-title {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.member-description {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Flavor Profiles (Flavors Page) */
+.flavor-intro {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+}
+
+.intro-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.flavor-profiles {
+    padding: 80px 0;
+}
+
+.flavor-detail-card {
+    margin-bottom: 4rem;
+}
+
+.flavor-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.flavor-detail-content.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.flavor-detail-content.reverse .flavor-detail-image {
+    order: 2;
+}
+
+.flavor-detail-content.reverse .flavor-detail-text {
+    order: 1;
+}
+
+.flavor-detail-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flavor-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.flavor-strength {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.strength-label {
+    font-weight: 700;
+    color: #fff;
+}
+
+.strength-meter {
+    width: 100px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.strength-fill {
+    height: 100%;
+    background-color: #D4AF37;
+    border-radius: 4px;
+}
+
+.strength-fill.medium {
+    width: 50%;
+}
+
+.strength-fill.full {
+    width: 100%;
+}
+
+.strength-fill.medium-full {
+    width: 75%;
+}
+
+.strength-text {
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+.flavor-notes {
+    margin-bottom: 1.5rem;
+}
+
+.flavor-notes h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.notes-grid {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.note-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.note-phase {
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+.note-desc {
+    color: #ccc;
+}
+
+.flavor-details {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.flavor-details p {
+    margin-bottom: 0.5rem;
+}
+
+/* Tasting Guide (Flavors Page) */
+.tasting-guide {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.guide-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.guide-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 1rem;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.guide-card {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+}
+
+.guide-number {
+    width: 60px;
+    height: 60px;
+    background-color: #D4AF37;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+}
+
+.guide-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.guide-card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Contact Section (Contact Page) */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+}
+
+.contact-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 2px solid #333;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #D4AF37;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-info {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.info-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-content {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.info-content a {
+    color: #D4AF37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+    color: #fff;
+}
+
+.hours-info {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hours-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+}
+
+.hours-grid {
+    display: grid;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.hour-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.day {
+    font-weight: 700;
+    color: #fff;
+}
+
+.time {
+    color: #D4AF37;
+}
+
+.hours-note {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Map Section (Contact Page) */
+.map-section {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.map-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.map-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 1rem;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.map-placeholder {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.map-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.map-content p {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.map-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ccc;
+}
+
+.feature-icon {
+    font-size: 1.2rem;
+}
+
+/* Additional Services (Contact Page) */
+.additional-services {
+    padding: 80px 0;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    margin-bottom: 1rem;
+}
+
+.service-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.service-link {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #D4AF37;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+    .story-content,
+    .craftsmanship-content,
+    .flavor-detail-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .flavor-detail-content.reverse .flavor-detail-image,
+    .flavor-detail-content.reverse .flavor-detail-text {
+        order: initial;
+    }
+    
+    .story-title,
+    .craftsmanship-title,
+    .flavor-name,
+    .contact-title {
+        font-size: 2rem;
+    }
+    
+    .intro-title {
+        font-size: 2rem;
+    }
+    
+    .values-grid,
+    .team-grid,
+    .guide-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .note-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .map-features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Events Page Styles - Add these to your existing styles.css */
+
+/* Featured Event Hero */
+.featured-event {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('featured-event-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.featured-event-content {
+    width: 100%;
+}
+
+.featured-event-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 60px 0;
+}
+
+.featured-event-info {
+    max-width: 600px;
+}
+
+.event-badge {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.featured-event-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.featured-event-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.featured-event-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.event-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detail-label {
+    font-size: 0.9rem;
+    color: #D4AF37;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detail-value {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.featured-event-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #D4AF37;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.featured-event-btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 1rem;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.event-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-date-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #D4AF37;
+    color: #000;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: center;
+    min-width: 60px;
+}
+
+.event-month {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-day {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-content {
+    padding: 1.5rem;
+}
+
+.event-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.event-description {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.event-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.event-time,
+.event-price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.meta-icon {
+    font-size: 1rem;
+}
+
+.event-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #D4AF37;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.event-btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Event Types */
+.event-types {
+    padding: 80px 0;
+}
+
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.type-card {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.type-card:hover {
+    transform: translateY(-5px);
+}
+
+.type-icon {
+    margin-bottom: 1.5rem;
+}
+
+.type-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.type-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+}
+
+.type-description {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.type-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.type-features li {
+    color: #ccc;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+    position: relative;
+    padding-left: 20px;
+}
+
+.type-features li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.type-features li:last-child {
+    border-bottom: none;
+}
+
+/* RSVP Section */
+.rsvp-section {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.rsvp-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.rsvp-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+}
+
+.rsvp-description {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.rsvp-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #ccc;
+}
+
+.benefit-icon {
+    color: #D4AF37;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.rsvp-form {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.rsvp-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #D4AF37;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rsvp-btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design for Events */
+@media (max-width: 768px) {
+    .featured-event-title {
+        font-size: 2rem;
+    }
+    
+    .featured-event-details {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .types-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rsvp-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .rsvp-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-event-title {
+        font-size: 1.8rem;
+    }
+    
+    .featured-event-details {
+        gap: 0.5rem;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-card {
+        margin-bottom: 1rem;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-slogan {
+        font-size: 2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slogan {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .flavor-grid {
+        grid-template-columns: 1fr;
+    }
+}
