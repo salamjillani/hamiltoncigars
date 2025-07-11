@@ -37,9 +37,11 @@
 
         .dominican-image img {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
+            height: auto; /* Changed from fixed height to auto */
+            min-height: 300px; /* Minimum height to maintain layout */
+            object-fit: contain; /* Changed from cover to contain to show full image */
             border-radius: 10px;
+            background-color: #111; /* Add background color for letterboxing if needed */
         }
 
         .founder-note {
@@ -80,9 +82,11 @@
 
         .founder-image img {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
+            height: auto; /* Changed from fixed height to auto */
+            min-height: 300px; /* Minimum height to maintain layout */
+            object-fit: contain; /* Changed from cover to contain to show full image */
             border-radius: 10px;
+            background-color: #111; /* Add background color for letterboxing if needed */
         }
 
         .brand-statement {
@@ -94,6 +98,81 @@
             padding: 2rem;
             background-color: #222;
             border-radius: 10px;
+        }
+
+        /* Additional image fixes */
+        
+        /* Story section image fix */
+        .story-image img {
+            width: 100%;
+            height: auto; /* Changed from fixed height to auto */
+            min-height: 300px; /* Minimum height to maintain layout */
+   /* Changed from cover to contain to show full image */
+
+        }
+
+        /* Craftsmanship section image fix */
+        .craftsmanship-image img {
+            width: 100%;
+            height: auto; /* Changed from fixed height to auto */
+            min-height: 300px; /* Minimum height to maintain layout */
+            object-fit: contain; /* Changed from cover to contain to show full image */
+            border-radius: 10px;
+            background-color: #111; /* Add background color for letterboxing if needed */
+        }
+
+        /* Team member images fix */
+        .member-image img {
+            width: 100%;
+            height: auto; /* Changed from fixed height to auto */
+            min-height: 200px; /* Minimum height to maintain layout */
+            object-fit: contain; /* Changed from cover to contain to show full image */
+            background-color: #111; /* Add background color for letterboxing if needed */
+        }
+
+        /* Product card images fix */
+        .product-image img {
+            width: 100%;
+            height: auto; /* Changed from fixed height to auto */
+            min-height: 200px; /* Minimum height to maintain layout */
+            object-fit: contain; /* Changed from cover to contain to show full image */
+            background-color: #111; /* Add background color for letterboxing if needed */
+        }
+
+        /* Flavor card images fix */
+        .flavor-image img {
+            width: 100%;
+            height: auto; /* Changed from fixed height to auto */
+            min-height: 150px; /* Minimum height to maintain layout */
+            object-fit: contain; /* Changed from cover to contain to show full image */
+            background-color: #111; /* Add background color for letterboxing if needed */
+            transition: transform 0.3s ease;
+        }
+
+        /* Alternative: If you want images to fill width but maintain aspect ratio */
+        .full-width-image {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* Container adjustments to ensure proper image display */
+        .dominican-image,
+        .founder-image,
+        .story-image,
+        .craftsmanship-image {
+            overflow: visible; /* Changed from hidden to visible */
+
+        }
+
+        .member-image,
+        .product-image,
+        .flavor-image {
+            overflow: visible; /* Changed from hidden to visible */
+            border-radius: 10px;
+            background-color: #111;
         }
 
         /* Responsive adjustments */
@@ -127,7 +206,7 @@
                 <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
                 <li class="nav-item"><a href="flavors.html" class="nav-link">Flavors</a></li>
                 <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -324,13 +403,13 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="flavors.html">Flavors</a></li>
                             <li><a href="events.html">Events</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <!-- <li><a href="contact.html">Contact</a></li> -->
                         </ul>
                     </div>
                     <div class="footer-section">
                         <h4>Contact</h4>
-                        <p>Email: <a href="mailto:orders@hamiltoncigars.com">orders@hamiltoncigars.com</a></p>
-                        <p>Phone: <a href="tel:+1-555-CIGARS">+1 (555) CIGARS</a></p>
+                        <p><a href="mailto:orders@hamiltoncigars.com">orders@hamiltoncigars.com</a></p>
+                        <p><a href="tel:+1 (770) 733-9616">+1 (770) 733-9616</a></p>
                         <p>Hours: Mon-Sat 10am-9pm<br>Sunday 12pm-6pm</p>
                     </div>
                 </div>
