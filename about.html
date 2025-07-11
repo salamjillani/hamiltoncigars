@@ -7,6 +7,113 @@
     <meta name="description" content="Discover the heritage and craftsmanship behind Hamilton Cigars. Learn about our commitment to excellence, premium tobacco sourcing, and luxury cigar traditions.">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the new sections */
+        .dominican-heritage {
+            padding: 80px 0;
+    
+        }
+
+        .dominican-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .dominican-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #D4AF37;
+            margin-bottom: 1.5rem;
+        }
+
+        .dominican-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .dominican-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .founder-note {
+            padding: 80px 0;
+            background-color: #000;
+        }
+
+        .founder-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .founder-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #D4AF37;
+            margin-bottom: 1.5rem;
+        }
+
+        .founder-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .founder-quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #D4AF37;
+            margin: 1.5rem 0;
+            padding: 1rem 0;
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+        }
+
+        .founder-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .brand-statement {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #D4AF37;
+            margin-top: 2rem;
+            text-align: center;
+            padding: 2rem;
+            background-color: #222;
+            border-radius: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .dominican-content,
+            .founder-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .dominican-title,
+            .founder-title {
+                font-size: 2rem;
+            }
+
+            .brand-statement {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -37,6 +144,26 @@
                 <p class="page-subtitle">A tradition of excellence spanning generations</p>
             </div>
 
+            <section class="dominican-heritage">
+                <div class="dominican-content">
+                    <div class="dominican-text">
+                        <h2 class="dominican-title">Rooted in Heritage: The Dominican Legacy of Cigar Excellence</h2>
+                        <p class="dominican-description">
+                            The story of Hamilton Cigars begins where earth, time, and tradition converge—on the rich, sun-drenched soil of the Dominican Republic. Revered as the soul of the modern cigar world, the Dominican Republic is home to centuries-old tobacco-growing traditions passed down through generations of artisans.
+                        </p>
+                        <p class="dominican-description">
+                            Following the Cuban Revolution, many of the world's most gifted cigar makers journeyed to the Dominican Republic, bringing with them their knowledge, seeds, and passion. What they found was a land with the perfect climate, fertile valleys, and patient craftsmanship needed to birth cigars of unmatched complexity and character.
+                        </p>
+                        <p class="dominican-description">
+                            At Hamilton Cigars, we honor this lineage. Every leaf we select is grown, aged, and hand-rolled with intention—drawing from the legacy of master blenders while embracing the standards of modern luxury. Our cigars are more than indulgence; they are a living tribute to the Dominican Republic's iconic role in the global cigar renaissance.
+                        </p>
+                    </div>
+                    <div class="dominican-image">
+                        <img src="images/dominican-republic.jpg" alt="Dominican Republic tobacco fields and cigar heritage">
+                    </div>
+                </div>
+            </section>
+
             <section class="story-section">
                 <div class="story-content">
                     <div class="story-text">
@@ -51,6 +178,35 @@
                     <div class="story-image">
                         <img src="images/about1.png" alt="Hamilton Cigars Heritage - Vintage tobacco processing facility">
                     </div>
+                </div>
+            </section>
+
+            <section class="founder-note">
+                <div class="founder-content">
+                    <div class="founder-image">
+                        <img src="images/hamilton-hypolite.jpg" alt="Hamilton Hypolite - Founder of Hamilton Cigars">
+                    </div>
+                    <div class="founder-text">
+                        <h2 class="founder-title">A Founder's Note: From the Bronx to the Barrel Room</h2>
+                        <p class="founder-description">
+                            Hamilton Hypolite, a proud New Yorker and Haitian by heritage, carries more than a name—he carries a legacy. Raised in the rhythm of the Bronx and now rooted in Atlanta, Hamilton is a father of two daughters, a visionary, and a connoisseur of culture. His journey is one of balance: honoring tradition while building new rituals.
+                        </p>
+                        <p class="founder-description">
+                            Hamilton Cigars was born from a desire to elevate the cigar experience—bridging generations, celebrating craftsmanship, and offering a moment of pause in an ever-moving world.
+                        </p>
+                        <p class="founder-quote">
+                            "This brand is my love letter to culture, to legacy, and to every man or woman finding peace in their own rhythm."
+                        </p>
+                        <p class="founder-quote">
+                            "As a father of two daughters, everything I build is designed to last. Hamilton Cigars isn't just a product—it's a standard. A mark of craftsmanship and legacy my daughters can one day be proud of."
+                        </p>
+                        <p class="founder-description">
+                            Whether you're toasting to milestones or simply reclaiming a moment for yourself, Hamilton Cigars invites you to savor each draw with intention, style, and soul.
+                        </p>
+                    </div>
+                </div>
+                <div class="brand-statement">
+                    <strong>This isn't just a cigar. This is a lifestyle.</strong>
                 </div>
             </section>
 
@@ -131,26 +287,52 @@
         </div>
     </main>
 
-    <footer class="footer">
+ <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <img src="images/logo.png" alt="Hamilton Cigars Logo" class="footer-logo">
-                    <p>Premium luxury cigars crafted with tradition and excellence.</p>
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="Hamilton Cigars Logo" class="footer-logo">
+                        <p>Premium luxury cigars crafted with tradition and excellence. Experience the finest tobacco blends from around the world.</p>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" title="Spotify">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.32 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" title="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                     <ul>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="flavors.html">Flavors</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: <a href="mailto:orders@hamiltoncigars.com">orders@hamiltoncigars.com</a></p>
+                <div class="footer-right">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="flavors.html">Flavors</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>Email: <a href="mailto:orders@hamiltoncigars.com">orders@hamiltoncigars.com</a></p>
+                        <p>Phone: <a href="tel:+1-555-CIGARS">+1 (555) CIGARS</a></p>
+                        <p>Hours: Mon-Sat 10am-9pm<br>Sunday 12pm-6pm</p>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -158,6 +340,7 @@
             </div>
         </div>
     </footer>
+
 
     <script>
         // Mobile menu toggle
