@@ -70,6 +70,564 @@ label,
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/* Mobile First - Base styles for small screens */
+@media (max-width: 480px) {
+    /* Page Header */
+    .page-header {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .page-subtitle {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    /* Featured Event */
+    .featured-event {
+        min-height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .featured-event-overlay {
+        padding: 2rem 0;
+    }
+    
+    .featured-event-info {
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .featured-event-title {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+    
+    .featured-event-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .featured-event-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .event-detail {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+    }
+    
+    .featured-event-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        display: block;
+    }
+
+    /* Events Grid */
+    .events-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .event-card {
+        border-radius: 12px;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .event-image {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .event-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .event-date-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 0.5rem;
+        border-radius: 8px;
+        text-align: center;
+        min-width: 60px;
+    }
+    
+    .event-month {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .event-day {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .event-content {
+        padding: 1.5rem;
+    }
+    
+    .event-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .event-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        color: #666;
+    }
+    
+    .event-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .event-time,
+    .event-price {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .event-btn {
+        width: 100%;
+        padding: 0.8rem;
+        text-align: center;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Event Types */
+    .types-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .type-card {
+        text-align: center;
+        padding: 2rem 1rem;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .type-icon {
+        margin-bottom: 1rem;
+    }
+    
+    .type-icon img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .type-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .type-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        color: #666;
+    }
+    
+    .type-features {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+    
+    .type-features li {
+        padding: 0.3rem 0;
+        font-size: 0.9rem;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+    
+    .type-features li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #d4af37;
+        font-weight: bold;
+    }
+
+    /* RSVP Section */
+    .rsvp-section {
+        padding: 3rem 0;
+    }
+    
+    .rsvp-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .rsvp-info {
+        text-align: center;
+    }
+    
+    .rsvp-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .rsvp-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    .rsvp-benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .benefit-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .benefit-icon {
+        color: #d4af37;
+        font-weight: bold;
+    }
+    
+    .rsvp-form {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        box-sizing: border-box;
+    }
+    
+    .rsvp-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
+
+/* Tablet Portrait - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .featured-event {
+        min-height: 400px;
+    }
+    
+    .featured-event-title {
+        font-size: 2.2rem;
+    }
+    
+    .featured-event-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .types-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .rsvp-content {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 3rem;
+    }
+}
+
+/* Tablet Landscape - 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page-title {
+        font-size: 3rem;
+    }
+    
+    .featured-event {
+        min-height: 500px;
+    }
+    
+    .featured-event-title {
+        font-size: 2.5rem;
+    }
+    
+    .featured-event-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .types-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .event-meta {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Desktop - 1025px and up */
+@media (min-width: 1025px) {
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .types-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    
+    .featured-event-details {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .event-detail {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.8rem 1.2rem;
+        border-radius: 8px;
+    }
+    
+    .event-meta {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .rsvp-content {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 4rem;
+    }
+}
+
+/* Large Desktop - 1440px and up */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    
+    .featured-event {
+        min-height: 600px;
+    }
+    
+    .featured-event-title {
+        font-size: 3rem;
+    }
+    
+    .page-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* iPhone SE and smaller devices */
+@media (max-width: 375px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .featured-event-title {
+        font-size: 1.5rem;
+    }
+    
+    .featured-event {
+        min-height: 250px;
+    }
+    
+    .event-image {
+        height: 180px;
+    }
+    
+    .event-content {
+        padding: 1rem;
+    }
+    
+    .type-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .rsvp-form {
+        padding: 1.5rem;
+    }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+    .featured-event {
+        min-height: 300px;
+    }
+    
+    .featured-event-overlay {
+        padding: 1rem 0;
+    }
+    
+    .featured-event-info {
+        padding: 0.5rem;
+    }
+    
+    .featured-event-title {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+    
+    .featured-event-description {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* High resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .event-image img,
+    .type-icon img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Print styles */
+@media print {
+    .hamburger,
+    .nav-menu,
+    .rsvp-form,
+    .footer-social {
+        display: none !important;
+    }
+    
+    .featured-event-btn,
+    .event-btn {
+        display: none !important;
+    }
+    
+    .event-card,
+    .type-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .event-card,
+    .type-card,
+    .rsvp-form {
+        background: #1a1a1a;
+        color: #fff;
+    }
+    
+    .event-description,
+    .type-description {
+        color: #ccc;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        background: #2a2a2a;
+        border-color: #444;
+        color: #fff;
+    }
+}
 </style>
     <link rel="stylesheet" href="styles.css">
 </head>

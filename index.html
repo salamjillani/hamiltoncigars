@@ -14,7 +14,35 @@
     font-weight: normal;
     font-style: normal;
 }
+.full-width-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
+.full-width-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+/* Responsive adjustments for full-width image */
+@media (max-width: 768px) {
+    .full-width-img {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-width-img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
 /* Update navigation menu to use Raleway in ALL CAPS */
 .nav-menu .nav-link {
     font-family: 'Raleway', sans-serif;
@@ -87,6 +115,10 @@ button {
             </div>
         </div>
     </header>
+
+       <section class="full-width-image">
+        <img src="images/about1.png" alt="Hamilton Cigars Heritage" class="full-width-img">
+    </section>
 
     <section class="flavor-teasers" id="shop-preview">
         <div class="container">
