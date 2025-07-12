@@ -5,7 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events & Experiences | Hamilton Cigars</title>
     <meta name="description" content="Join exclusive cigar events, tastings, and social gatherings at Hamilton Cigars. Connect with fellow connoisseurs and discover new experiences.">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Add this to the <head> section after the existing font links -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+@font-face {
+    font-family: 'Beautiful Feelings';
+    src: url('beautifulfeelings.ttf') format('truetype');  
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Update navigation menu to use Raleway in ALL CAPS */
+.nav-menu .nav-link {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Update all headers to use Beautiful Feelings */
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.page-title,
+.featured-event-title,
+.event-title,
+.type-title,
+.rsvp-title,
+.footer-section h4 {
+    font-family: 'Beautiful Feelings', cursive;
+}
+
+/* Update body text to use Raleway */
+body,
+p,
+.nav-link,
+.featured-event-btn,
+.event-btn,
+.rsvp-btn,
+.page-subtitle,
+.section-subtitle,
+.featured-event-description,
+.event-description,
+.type-description,
+.rsvp-description,
+.footer-brand p,
+.footer-section p,
+.footer-section ul li a,
+input,
+button,
+select,
+textarea,
+label,
+.event-badge,
+.detail-label,
+.detail-value,
+.event-meta,
+.type-features,
+.benefit-item {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Ensure the hamburger menu items also use Raleway uppercase */
+.hamburger.active + .nav-menu .nav-link {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+</style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>

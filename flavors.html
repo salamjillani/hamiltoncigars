@@ -5,7 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cigar Flavor Profiles & Tasting Notes | Hamilton Cigars</title>
     <meta name="description" content="Explore our premium cigar flavor profiles and tasting notes. Discover the complexity and character of Hamilton's signature blends and limited editions.">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Add this to the <head> section of flavors.html, after the existing Google Fonts link -->
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+@font-face {
+    font-family: 'Beautiful Feelings';
+    src: url('beautifulfeelings.ttf') format('truetype');  
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Update navigation menu to use Raleway in ALL CAPS */
+.nav-menu .nav-link {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Update all headers to use Beautiful Feelings */
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.page-title,
+.page-subtitle,
+.intro-title,
+.flavor-name,
+.guide-header h2,
+.guide-subtitle,
+.guide-card h3,
+.footer-section h4 {
+    font-family: 'Beautiful Feelings', cursive;
+}
+
+/* Update body text to use Raleway */
+body,
+p,
+.nav-link,
+.intro-description,
+.flavor-details,
+.flavor-details p,
+.note-desc,
+.note-phase,
+.strength-label,
+.strength-text,
+.guide-card p,
+.footer-brand p,
+.footer-section p,
+.footer-section ul li a {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Ensure the hamburger menu items also use Raleway uppercase */
+.hamburger.active + .nav-menu .nav-link {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+</style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
