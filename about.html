@@ -142,28 +142,34 @@ p,
             background-color: #111; /* Add background color for letterboxing if needed */
         }
 
-        .brand-statement {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #D4AF37;
-            margin-top: 2rem;
-            text-align: center;
-            padding: 2rem;
-            background-color: #222;
-            border-radius: 10px;
-        }
+.brand-statement {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #D4AF37;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #222;
+    border-radius: 10px;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow if needed */
+}
 
         /* Additional image fixes */
-        
-        /* Story section image fix */
-        .story-image img {
-            width: 100%;
-            height: auto; /* Changed from fixed height to auto */
-            min-height: 300px; /* Minimum height to maintain layout */
-   /* Changed from cover to contain to show full image */
+ .story-image img {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    object-fit: contain; /* Add this line that was missing */
+    border-radius: 10px;
+    background-color: #111; /* Add this line that was missing */
+}
 
-        }
-
+        @media (max-width: 768px) {
+    .story-image img {
+        min-height: 200px; /* Reduce minimum height on mobile */
+    }
+}
         /* Craftsmanship section image fix */
         .craftsmanship-image img {
             width: 100%;
@@ -242,8 +248,17 @@ p,
             }
 
             .brand-statement {
-                font-size: 1.1rem;
-            }
+        font-size: 1rem; /* Smaller font on mobile */
+        padding: 1.5rem 1rem; /* Reduce padding */
+        white-space: normal; /* Allow wrapping on very small screens if needed */
+    }
+
+    @media (max-width: 480px) {
+    .brand-statement {
+        font-size: 0.9rem; /* Even smaller on very small screens */
+        padding: 1rem 0.5rem;
+    }
+}
         }
     </style>
 </head>
