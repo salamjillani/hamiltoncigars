@@ -28,7 +28,8 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
+    height: 70px;
 }
 
 .nav-container {
@@ -38,6 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .nav-logo {
@@ -47,7 +49,7 @@ body {
 }
 
 .nav-logo-img {
-    height: 40px;
+    height: 60px; /* Increased from 40px */
     transition: transform 0.3s ease;
 }
 
@@ -64,6 +66,7 @@ body {
 .nav-link {
     color: #fff;
     text-decoration: none;
+    font-size: 0.9rem;
     font-weight: 300;
     transition: all 0.3s ease;
     position: relative;
@@ -659,9 +662,7 @@ body {
         }
 
 
-/* Additional CSS for About, Flavors, and Contact Pages */
 
-/* Active Navigation Link */
 .nav-link.active {
     color: #D4AF37;
 }
@@ -1840,6 +1841,10 @@ body {
         display: flex;
     }
 
+.nav-logo-img {
+        height: 50px; 
+    }
+
   .nav-menu {
         position: fixed;
         left: -100%;
@@ -1861,9 +1866,9 @@ body {
         margin: 1rem 0;
     }
 
-    .nav-link {
+   .nav-link {
         padding: 12px 0;
-        font-size: 1.1rem;
+        font-size: 1rem; 
     }
 
     .nav-link::after {
