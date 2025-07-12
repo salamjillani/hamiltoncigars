@@ -735,54 +735,162 @@ body {
 }
 
 /* Values Section (About Page) */
-.values-section {
-    padding: 80px 0;
-    background-color: #111;
-}
+     .values-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+            position: relative;
+            overflow: hidden;
+        }
 
-.values-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
+        .values-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%23ffffff" opacity="0.02"/><circle cx="80" cy="40" r="1" fill="%23ffffff" opacity="0.01"/><circle cx="40" cy="80" r="1" fill="%23ffffff" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
 
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
-.value-card {
-    background-color: #222;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
+        .values-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
 
-.value-card:hover {
-    transform: translateY(-5px);
-}
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
 
-.value-icon {
-    margin-bottom: 1rem;
-}
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
 
-.value-icon img {
-    width: 60px;
-    height: 60px;
-}
+        .value-card {
+            background: linear-gradient(145deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
 
-.value-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: #D4AF37;
-    margin-bottom: 1rem;
-}
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%, rgba(212, 175, 55, 0.05) 100%);
+            border-radius: 15px;
+            pointer-events: none;
+        }
 
-.value-card p {
-    color: #ccc;
-    line-height: 1.6;
-}
+        .value-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+        }
+
+        .value-icon {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .icon-circle {
+            width: 100px;
+            height: 100px;
+            border: 3px solid #D4AF37;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(212, 175, 55, 0.1);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover .icon-circle {
+            background: rgba(212, 175, 55, 0.2);
+            transform: scale(1.05);
+        }
+
+        .value-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .value-card p {
+            color: #cccccc;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            font-weight: 300;
+            max-width: 260px;
+            margin: 0 auto;
+        }
+
+        /* Custom SVG Icons */
+        .quality-icon {
+            width: 50px;
+            height: 50px;
+            fill: #D4AF37;
+        }
+
+        .tradition-icon {
+            width: 50px;
+            height: 50px;
+            fill: #D4AF37;
+        }
+
+        .sustainability-icon {
+            width: 50px;
+            height: 50px;
+            fill: #D4AF37;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .value-card {
+                padding: 30px 20px;
+            }
+            
+            .icon-circle {
+                width: 100px;
+                height: 100px;
+            }
+        }
 
 /* Team Section (About Page) */
 .team-section {

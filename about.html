@@ -14,11 +14,12 @@
     font-style: normal;
 }
 
-/* Update navigation menu to use Raleway in ALL CAPS */
 .nav-menu .nav-link {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #C8AE6A;
+    font-weight: 400;
 }
 
 
@@ -38,14 +39,17 @@ p,
 .footer-section ul li a,
 .footer-bottom p {
     font-family: 'Raleway', sans-serif;
+    color: #d6c28f;
 }
 
-/* Ensure the hamburger menu items also use Raleway uppercase */
 .hamburger.active + .nav-menu .nav-link {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #C8AE6A;
+    font-weight: 400;
 }
+
 </style>
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -361,35 +365,61 @@ p,
                     </div>
                 </div>
             </section>
-
-            <section class="values-section">
-                <div class="values-header">
-                    <h2 class="section-title">Our Values</h2>
+ <section class="values-section">
+        <div class="container">
+            <div class="values-header">
+                <h2 class="section-title">Our Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <div class="icon-circle">
+                            <svg class="quality-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <rect x="6" y="6" width="4" height="12" fill="currentColor"/>
+                                <rect x="14" y="6" width="4" height="12" fill="currentColor"/>
+                                <rect x="10" y="6" width="4" height="12" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Uncompromising Quality</h3>
+                    <p>Every cigar meets our exacting standards before earning the Hamilton name. We reject more cigars than we sell, ensuring only perfection reaches our customers.</p>
                 </div>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <img src="images/quality-icon.png" alt="Quality Excellence Icon">
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <div class="icon-circle">
+                            <svg class="tradition-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M12 2v20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M7 7l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M17 7L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                            </svg>
                         </div>
-                        <h3>Uncompromising Quality</h3>
-                        <p>Every cigar meets our exacting standards before earning the Hamilton name. We reject more cigars than we sell, ensuring only perfection reaches our customers.</p>
                     </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <img src="images/tradition-icon.png" alt="Traditional Craftsmanship Icon">
-                        </div>
-                        <h3>Traditional Methods</h3>
-                        <p>Hand-rolling techniques passed down through generations combined with modern aging processes create cigars of exceptional complexity and character.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <img src="images/sustainability-icon.png" alt="Sustainable Practices Icon">
-                        </div>
-                        <h3>Sustainable Excellence</h3>
-                        <p>We partner with farmers who practice sustainable agriculture, ensuring the finest tobacco while preserving the land for future generations.</p>
-                    </div>
+                    <h3>Traditional Methods</h3>
+                    <p>Hand-rolling techniques passed down through generations combined with modern aging processes create cigars of exceptional complexity and character.</p>
                 </div>
-            </section>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <div class="icon-circle">
+                            <svg class="sustainability-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2c-4.4 0-8 3.6-8 8 0 5.4 8 12 8 12s8-6.6 8-12c0-4.4-3.6-8-8-8z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M10 10l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M14 10l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Sustainable Excellence</h3>
+                    <p>We partner with farmers who practice sustainable agriculture, ensuring the finest tobacco while preserving the land for future generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
             <section class="team-section">
                 <div class="team-header">
@@ -466,7 +496,7 @@ p,
                         <h4>Contact</h4>
                         <p><a href="mailto:orders@hamiltoncigars.com">orders@hamiltoncigars.com</a></p>
                         <p><a href="tel:+1 (770) 733-9616">+1 (770) 733-9616</a></p>
-                        <p>Hours: Mon-Sat 10am-9pm<br>Sunday 12pm-6pm</p>
+                        <p>Lounge Hours: Mon-Thu 5pm-9pm</p>
                     </div>
                 </div>
             </div>
