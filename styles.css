@@ -183,7 +183,6 @@ body::before {
 }
 
 .hero-slogan {
-    font-family: 'Playfair Display', serif;
     color: #D4AF37;
     font-size: 3rem;
     font-weight: 700;
@@ -242,7 +241,7 @@ body::before {
 }
 
 .page-title {
-    font-family: 'Playfair Display', serif;
+
     font-size: 3rem;
     color: #D4AF37;
     margin-bottom: 1rem;
@@ -255,7 +254,7 @@ body::before {
 
 /* Section Titles */
 .section-title {
-    font-family: 'Playfair Display', serif;
+   
     font-size: 2.5rem;
     text-align: center;
     color: #D4AF37;
@@ -368,7 +367,7 @@ body::before {
         }
 
         .flavor-content h3 {
-            font-family: 'Playfair Display', serif;
+          
             font-size: 1.5rem;
             color: #D4AF37;
             margin-bottom: 0.5rem;
@@ -413,7 +412,7 @@ body::before {
 }
 
 .product-content h3 {
-    font-family: 'Playfair Display', serif;
+ 
     font-size: 1.5rem;
     color: #D4AF37;
     margin-bottom: 0.5rem;
@@ -534,7 +533,7 @@ body::before {
         }
 
           .demo-section h1 {
-            font-family: 'Playfair Display', serif;
+           
             font-size: 3rem;
             color: #D4AF37;
             margin-bottom: 2rem;
@@ -555,7 +554,7 @@ body::before {
         }
 
         .demo-content h1 {
-            font-family: 'Playfair Display', serif;
+          
             font-size: 3rem;
             color: #D4AF37;
             margin-bottom: 1rem;
@@ -708,7 +707,7 @@ body::before {
 }
 
 .story-title {
-    font-family: 'Playfair Display', serif;
+  
     font-size: 2.5rem;
     color: #D4AF37;
     margin-bottom: 1.5rem;
@@ -741,7 +740,7 @@ body::before {
 }
 
 .craftsmanship-title {
-    font-family: 'Playfair Display', serif;
+  
     font-size: 2.5rem;
     color: #D4AF37;
     margin-bottom: 1.5rem;
@@ -793,7 +792,7 @@ body::before {
         }
 
         .section-title {
-            font-family: 'Playfair Display', serif;
+       
             font-size: 3.5rem;
             font-weight: 700;
             color: #D4AF37;
@@ -862,7 +861,7 @@ body::before {
         }
 
         .value-card h3 {
-            font-family: 'Playfair Display', serif;
+          
             font-size: 1.8rem;
             font-weight: 700;
             color: #D4AF37;
@@ -970,7 +969,7 @@ body::before {
 }
 
 .member-info h3 {
-    font-family: 'Playfair Display', serif;
+ 
     font-size: 1.5rem;
     color: #D4AF37;
     margin-bottom: 0.5rem;
@@ -1000,7 +999,7 @@ body::before {
 }
 
 .intro-title {
-    font-family: 'Playfair Display', serif;
+ 
     font-size: 2.5rem;
     color: #D4AF37;
     margin-bottom: 1.5rem;
@@ -1047,7 +1046,7 @@ body::before {
 }
 
 .flavor-name {
-    font-family: 'Playfair Display', serif;
+   
     font-size: 2rem;
     color: #D4AF37;
     margin-bottom: 1rem;
@@ -1101,7 +1100,7 @@ body::before {
 }
 
 .flavor-notes h4 {
-    font-family: 'Playfair Display', serif;
+ 
     font-size: 1.3rem;
     color: #D4AF37;
     margin-bottom: 1rem;
@@ -1187,7 +1186,7 @@ body::before {
 }
 
 .guide-card h3 {
-    font-family: 'Playfair Display', serif;
+
     font-size: 1.3rem;
     color: #D4AF37;
     margin-bottom: 1rem;
@@ -1210,7 +1209,7 @@ body::before {
 }
 
 .contact-title {
-    font-family: 'Playfair Display', serif;
+ 
     font-size: 2.5rem;
     color: #D4AF37;
     margin-bottom: 1.5rem;
@@ -1269,7 +1268,7 @@ body::before {
 }
 
 .contact-info h3 {
-    font-family: 'Playfair Display', serif;
+  
     font-size: 1.5rem;
     color: #D4AF37;
     margin-bottom: 1.5rem;
@@ -1315,7 +1314,7 @@ body::before {
 }
 
 .hours-info h3 {
-    font-family: 'Playfair Display', serif;
+ 
     font-size: 1.5rem;
     color: #D4AF37;
     margin-bottom: 1.5rem;
@@ -1380,7 +1379,7 @@ body::before {
 }
 
 .map-content h3 {
-    font-family: 'Playfair Display', serif;
+ 
     font-size: 2rem;
     color: #D4AF37;
     margin-bottom: 1rem;
@@ -1448,7 +1447,7 @@ body::before {
 }
 
 .service-card h3 {
-    font-family: 'Playfair Display', serif;
+   
     font-size: 1.5rem;
     color: #D4AF37;
     margin-bottom: 1rem;
@@ -1584,7 +1583,7 @@ body::before {
 }
 
 .featured-event-title {
-    font-family: 'Playfair Display', serif;
+   
     font-size: 3rem;
     color: #fff;
     margin-bottom: 1.5rem;
@@ -1720,7 +1719,7 @@ body::before {
 }
 
 .event-title {
-    font-family: 'Playfair Display', serif;
+   
     font-size: 1.5rem;
     color: #D4AF37;
     margin-bottom: 1rem;
@@ -1801,7 +1800,7 @@ body::before {
 }
 
 .type-title {
-    font-family: 'Playfair Display', serif;
+ 
     font-size: 1.5rem;
     color: #D4AF37;
     margin-bottom: 1rem;
@@ -1853,7 +1852,7 @@ body::before {
 }
 
 .rsvp-title {
-    font-family: 'Playfair Display', serif;
+
     font-size: 2.5rem;
     color: #D4AF37;
     margin-bottom: 1.5rem;
