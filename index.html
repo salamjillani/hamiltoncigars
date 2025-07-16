@@ -152,6 +152,55 @@ button {
     font-size: 0.8rem;
 }
 
+/* Add spacing for flavor-teasers section */
+.flavor-teasers {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.flavor-teasers .section-title {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Add more spacing between flavor cards */
+.flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .flavor-teasers {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    
+    .flavor-teasers .section-title {
+        margin-bottom: 2.5rem;
+    }
+    
+    .flavor-grid {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .flavor-teasers {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    .flavor-teasers .section-title {
+        margin-bottom: 2rem;
+    }
+    
+    .flavor-grid {
+        gap: 2rem;
+    }
+}
+
 </style>
  <link rel="stylesheet" href="styles.css">
  
@@ -188,46 +237,8 @@ button {
     </header>
 
        <section class="full-width-image">
-        <img src="images/about1.png" alt="Hamilton Cigars Heritage" class="full-width-img">
+        <img src="images/ourcigars1.jpeg" alt="Hamilton Cigars Heritage" class="full-width-img">
     </section>
-
-    <section class="flavor-teasers" id="shop-preview">
-        <div class="container">
-            <h2 class="section-title">Our Signature Collection</h2>
-            <div class="flavor-grid">
-                <div class="flavor-card">
-                    <div class="flavor-image">
-                        <img src="images/aleksandar.jpg" alt="Classic Blend Cigar">
-                        <div class="hover-overlay">
-                            <a href="#pairing-guide" class="overlay-button">Pairing Guide</a>
-                            <a href="#view-details" class="overlay-button secondary">View Details</a>
-                        </div>
-                    </div>
-                    <div class="flavor-content">
-                        <h3>Classic Blend</h3>
-                        <p>Rich, smooth, and timeless.</p>
-                    </div>
-                </div>
-                
-        
-                
-                <div class="flavor-card">
-                    <div class="flavor-image">
-                        <img src="images/flavor1.jpg" alt="Limited Edition Cigar">
-                        <div class="hover-overlay">
-                            <a href="#pairing-guide" class="overlay-button">Pairing Guide</a>
-                            <a href="#view-details" class="overlay-button secondary">View Details</a>
-                        </div>
-                    </div>
-                    <div class="flavor-content">
-                        <h3>Premium Reserve</h3>
-                        <p>Exclusive craftsmanship meets luxury.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
    <section class="newsletter" id="newsletter">
         <div class="container">
@@ -319,7 +330,7 @@ button {
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('hfref')).scrollIntoView({
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
