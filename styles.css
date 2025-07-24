@@ -398,7 +398,7 @@ body::before {
 }
 
 .product-image {
-    height: 250px;
+    height: 500px;
     overflow: hidden;
 }
 
