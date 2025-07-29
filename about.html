@@ -35,8 +35,6 @@ h1, h2, h3, h4, h5, h6,
     font-size: 0.8rem;
 }
 
-
-
 /* Update body text to use Raleway */
 body,
 p,
@@ -186,13 +184,21 @@ p,
             background-color: #111; /* Add background color for letterboxing if needed */
         }
 
-        /* Team member images fix */
+        /* Team member images fix - FIXED VERSION */
+        .member-image {
+            width: 100%;
+            height: 250px; /* Fixed height for consistent card layout */
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #111;
+            margin-bottom: 1rem; /* Add space between image and content */
+        }
+
         .member-image img {
             width: 100%;
-            height: auto; /* Changed from fixed height to auto */
-            min-height: 200px; /* Minimum height to maintain layout */
-            object-fit: contain; /* Changed from cover to contain to show full image */
-            background-color: #111; /* Add background color for letterboxing if needed */
+            height: 100%; /* Fill the container height */
+            object-fit: cover; /* Use cover to fill the container while maintaining aspect ratio */
+            border-radius: 10px;
         }
 
         /* Product card images fix */
@@ -232,12 +238,40 @@ p,
 
         }
 
-        .member-image,
         .product-image,
         .flavor-image {
             overflow: visible; /* Changed from hidden to visible */
             border-radius: 10px;
             background-color: #111;
+        }
+
+        /* Team section improvements */
+        .team-member {
+            background-color: #1a1a1a;
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-info {
+            text-align: center;
+        }
+
+        .member-title {
+            color: #D4AF37;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .member-description {
+            color: #ccc;
+            line-height: 1.6;
+            font-size: 0.95rem;
         }
 
         /* Responsive adjustments */
@@ -259,10 +293,18 @@ p,
         white-space: normal; /* Allow wrapping on very small screens if needed */
     }
 
+    .member-image {
+        height: 200px; /* Smaller height on mobile */
+    }
+
     @media (max-width: 480px) {
     .brand-statement {
         font-size: 0.9rem; /* Even smaller on very small screens */
         padding: 1rem 0.5rem;
+    }
+
+    .member-image {
+        height: 180px; /* Even smaller on very small screens */
     }
 }
         }
@@ -448,20 +490,20 @@ p,
                 <div class="team-grid">
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="images/guy.jpg" alt="Eduardo Martinez - Master Roller">
+                            <img src="images/masterroller.png" alt="Eduardo Martinez - Master Roller">
                         </div>
                         <div class="member-info">
-                            <h3>Eduardo Martinez</h3>
+                           
                             <p class="member-title">Master Roller</p>
                             <p class="member-description">With over 30 years of experience, Eduardo ensures every Hamilton cigar meets our exacting standards.</p>
                         </div>
                     </div>
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="images/woman.avif" alt="Maria Santos - Tobacco Master">
+                            <img src="images/roller.png" alt="Maria Santos - Tobacco Master">
                         </div>
                         <div class="member-info">
-                            <h3>Maria Santos</h3>
+                           
                             <p class="member-title">Tobacco Master</p>
                             <p class="member-description">Maria's expertise in tobacco selection and aging creates the complex flavor profiles Hamilton is known for.</p>
                         </div>
