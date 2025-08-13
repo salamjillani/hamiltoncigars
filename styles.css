@@ -906,13 +906,13 @@ body::before {
         /* Responsive Design */
         @media (max-width: 768px) {
 
-               .hero {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 90vh; /* Adjust as needed for your image */
-        min-height: 320px;
-        padding-top: 60px;
+        .hero {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 40vh; /* Adjust as needed for your image */
+            min-height: 320px;
+           
     }
 
             .section-title {
