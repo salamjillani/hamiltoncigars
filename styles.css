@@ -911,7 +911,7 @@ body::before {
             background-repeat: no-repeat;
             background-position: center;
             height: 50vh; 
-            min-height: 320px;
+            
             padding-top: 80px;
             }
 
