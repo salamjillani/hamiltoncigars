@@ -70,23 +70,24 @@
         margin-bottom: 0.8rem;
       }
 
-      .full-width-img {
-        width: 60%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        object-fit: cover;
-        max-width: 100%;
-      }
+ .full-width-img {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Show full image without cropping */
+
+}
 
       /* Responsive adjustments for full-width image */
       @media (max-width: 768px) {
-        .full-width-img {
-          width: 90%;
-          height: 200px;
-          margin: 0 auto;
-          object-fit: cover;
-        }
+         .full-width-img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
         h1,
         .hero-content h1 {
           font-size: 2.8rem;
@@ -110,10 +111,12 @@
       }
 
       @media (max-width: 480px) {
-        .full-width-img {
-          height: 200px;
-          object-fit: cover;
-        }
+       .full-width-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
         h1,
         .hero-content h1 {
           font-size: 2.2rem;
