@@ -1,273 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamilton Cigars - Indulge in Luxury. Ignite Excellence.</title>
-    <meta name="description" content="Premium luxury cigars crafted with tradition and excellence. Experience the finest tobacco blends and join our exclusive VIP membership.">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-<style>
-@font-face {
-    font-family: 'Beautiful Feelings';
-    src: url('./fonts/beautifulfeelings.ttf') format('truetype'),
-    url('./fonts/beautifulfeelings.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    <meta
+      name="description"
+      content="Premium luxury cigars crafted with tradition and excellence. Experience the finest tobacco blends and join our exclusive VIP membership."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Beautiful Feelings";
+        src: url("./fonts/beautifulfeelings.ttf") format("truetype"),
+          url("./fonts/beautifulfeelings.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-}
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .section-title,
+      .hero-content h1,
+      .flavor-content h3,
+      .newsletter-content h2,
+      .footer-section h4 {
+        font-family: "Beautiful Feelings", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+      }
 
-h1, h2, h3, h4, h5, h6,
-.section-title,
-.hero-content h1,
-.flavor-content h3,
-.newsletter-content h2,
-.footer-section h4 {
-    font-family: 'Beautiful Feelings', serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 0.5rem;
-    margin-top: 1.5rem;
-}
+      .full-width-image {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
 
+      h1,
+      .hero-content h1 {
+        font-size: 3.5rem; /* Increased from default */
+      }
 
-.full-width-image {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+      h2,
+      .section-title,
+      .newsletter-content h2 {
+        font-size: 2.8rem; /* Increased from default */
+      }
 
-h1, .hero-content h1 {
-    font-size: 3.5rem; /* Increased from default */
-}
+      h3,
+      .flavor-content h3 {
+        font-size: 2.2rem; /* Increased from default */
+      }
 
-h2, .section-title, .newsletter-content h2 {
-    font-size: 2.8rem; /* Increased from default */
-}
+      .flavor-content h3 {
+        margin-bottom: 0.3rem;
+      }
 
-h3, .flavor-content h3 {
-    font-size: 2.2rem; /* Increased from default */
-}
+      .footer-section h4 {
+        margin-bottom: 0.8rem;
+      }
 
-
-.flavor-content h3 {
-    margin-bottom: 0.3rem;
-}
-
-.footer-section h4 {
-    margin-bottom: 0.8rem;
-}
-
-.full-width-img {
-    width: 60%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
-    max-width: 100%;
-}
-
-/* Responsive adjustments for full-width image */
-@media (max-width: 768px) {
-    .full-width-img {
-        width: 90%;
-        height: 200px;
+      .full-width-img {
+        width: 60%;
+        height: auto;
+        display: block;
         margin: 0 auto;
         object-fit: cover;
-    }
-       h1, .hero-content h1 {
-        font-size: 2.8rem;
-    }
-    
-    h2, .section-title, .newsletter-content h2 {
-        font-size: 2.2rem;
-    }
-    
-    h3, .flavor-content h3 {
-        font-size: 1.8rem;
-    }
-    
-    h4, .footer-section h4 {
-        font-size: 1.5rem;
-    }
-}
+        max-width: 100%;
+      }
 
-@media (max-width: 480px) {
-    .full-width-img {
-        height: 200px;
-        object-fit: cover;
-    }
-       h1, .hero-content h1 {
-        font-size: 2.2rem;
-    }
-    
-    h2, .section-title, .newsletter-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    h3, .flavor-content h3 {
-        font-size: 1.5rem;
-    }
-    
-    h4, .footer-section h4 {
-        font-size: 1.3rem;
-    }
-}
-/* Update navigation menu to use Raleway in ALL CAPS */
-.nav-menu .nav-link {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #C8AE6A;
-    font-size: 0.8rem;
-}
+      /* Responsive adjustments for full-width image */
+      @media (max-width: 768px) {
+        .full-width-img {
+          width: 90%;
+          height: 200px;
+          margin: 0 auto;
+          object-fit: cover;
+        }
+        h1,
+        .hero-content h1 {
+          font-size: 2.8rem;
+        }
 
-.newsletter-content h2 {
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-}
+        h2,
+        .section-title,
+        .newsletter-content h2 {
+          font-size: 2.2rem;
+        }
 
+        h3,
+        .flavor-content h3 {
+          font-size: 1.8rem;
+        }
 
-/* Update body text to use Raleway */
-body,
-p,
-.nav-link,
-.cta-button,
-.flavor-content p,
-.newsletter-content p,
-.footer-brand p,
-.footer-section p,
-.footer-section ul li a,
-input,
-button {
-    font-family: 'Raleway', sans-serif;
-    color: #d6c28f;
-    
-}
+        h4,
+        .footer-section h4 {
+          font-size: 1.5rem;
+        }
+      }
 
-.hamburger.active + .nav-menu .nav-link {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #C8AE6A;
-    font-size: 0.8rem;
-}
+      @media (max-width: 480px) {
+        .full-width-img {
+          height: 200px;
+          object-fit: cover;
+        }
+        h1,
+        .hero-content h1 {
+          font-size: 2.2rem;
+        }
 
-/* Add spacing for flavor-teasers section */
-.flavor-teasers {
-    padding-top: 5rem;
-    padding-bottom: 4rem;
-}
+        h2,
+        .section-title,
+        .newsletter-content h2 {
+          font-size: 1.8rem;
+        }
 
-.flavor-teasers .section-title {
-    margin-bottom: 3rem;
-    text-align: center;
-}
+        h3,
+        .flavor-content h3 {
+          font-size: 1.5rem;
+        }
 
-/* Add more spacing between flavor cards */
-.flavor-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-    margin-top: 2rem;
-}
+        h4,
+        .footer-section h4 {
+          font-size: 1.3rem;
+        }
+      }
+      /* Update navigation menu to use Raleway in ALL CAPS */
+      .nav-menu .nav-link {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #c8ae6a;
+        font-size: 0.8rem;
+      }
 
-@media (max-width: 768px) {
-    .flavor-teasers {
-        padding-top: 4rem;
-        padding-bottom: 3rem;
-    }
-    
-    .flavor-teasers .section-title {
-        margin-bottom: 2.5rem;
-    }
-    
-    .flavor-grid {
-        gap: 2.5rem;
-    }
-}
+      .newsletter-content h2 {
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+      }
 
-@media (max-width: 480px) {
-    .flavor-teasers {
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-    }
-    
-    .flavor-teasers .section-title {
-        margin-bottom: 2rem;
-    }
-    
-    .flavor-grid {
-        gap: 2rem;
-    }
-}
+      /* Update body text to use Raleway */
+      body,
+      p,
+      .nav-link,
+      .cta-button,
+      .flavor-content p,
+      .newsletter-content p,
+      .footer-brand p,
+      .footer-section p,
+      .footer-section ul li a,
+      input,
+      button {
+        font-family: "Raleway", sans-serif;
+        color: #d6c28f;
+      }
 
-</style>
- <link rel="stylesheet" href="styles.css">
- 
-</head>
-<body>
+      .hamburger.active + .nav-menu .nav-link {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #c8ae6a;
+        font-size: 0.8rem;
+      }
+
+      /* Add spacing for flavor-teasers section */
+      .flavor-teasers {
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+      }
+
+      .flavor-teasers .section-title {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      /* Add more spacing between flavor cards */
+      .flavor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .flavor-teasers {
+          padding-top: 4rem;
+          padding-bottom: 3rem;
+        }
+
+        .flavor-teasers .section-title {
+          margin-bottom: 2.5rem;
+        }
+
+        .flavor-grid {
+          gap: 2.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .flavor-teasers {
+          padding-top: 3rem;
+          padding-bottom: 2rem;
+        }
+
+        .flavor-teasers .section-title {
+          margin-bottom: 2rem;
+        }
+
+        .flavor-grid {
+          gap: 2rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="images/logo.png" alt="Hamilton Cigars Logo" class="nav-logo-img">
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <!-- <li class="nav-item"><a href="flavors.html" class="nav-link">Flavors</a></li> -->
-                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="images/logo.png"
+            alt="Hamilton Cigars Logo"
+            class="nav-logo-img"
+          />
         </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="shop.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <!-- <li class="nav-item"><a href="flavors.html" class="nav-link">Flavors</a></li> -->
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Events</a>
+          </li>
+          <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <header class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-cta">
-                <a href="#newsletter" class="cta-button">Join Our Newsletter</a>
-            </div>
+      <div class="hero-content">
+        <div class="hero-cta">
+          <a href="#newsletter" class="cta-button">Join Our Newsletter</a>
         </div>
+      </div>
     </header>
 
-       <section class="full-width-image">
-        <img src="images/ourcigars.png" alt="Hamilton Cigars Heritage" class="full-width-img">
+    <section class="full-width-image">
+      <img
+        src="images/ourcigars.png"
+        alt="Hamilton Cigars Heritage"
+        class="full-width-img"
+      />
     </section>
 
-   <section class="newsletter" id="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Join the Inner Circle</h2>
-                <p>Be the first to know about new releases, exclusive events, and member-only experiences.</p>
-                <p class="newsletter-spam-notice">We hate spam too. Only the good stuff, once or twice a month.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="submit-btn">Subscribe</button>
-                </form>
-            </div>
+    <section class="newsletter" id="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Join the Inner Circle</h2>
+          <p>
+            Be the first to know about new releases, exclusive events, and
+            member-only experiences.
+          </p>
+          <p class="newsletter-spam-notice">
+            We hate spam too. Only the good stuff, once or twice a month.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="submit-btn">Subscribe</button>
+          </form>
         </div>
+      </div>
     </section>
 
-   <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <div class="footer-brand">
-                        <img src="images/logo.png" alt="Hamilton Cigars Logo" class="footer-logo">
-                        <p>Premium luxury cigars crafted with tradition and excellence. Experience the finest tobacco blends from around the world.</p>
-                    </div>
-                    <div class="footer-social">
-                        <h4>Follow Us</h4>
-                        <div class="social-links">
-                <a href="https://www.instagram.com/hamiltoncigars?igsh=MW1hYWJxNnRzMTJsNg==" class="social-link" title="Instagram">
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-brand">
+              <img
+                src="images/logo.png"
+                alt="Hamilton Cigars Logo"
+                class="footer-logo"
+              />
+              <p>
+                Premium luxury cigars crafted with tradition and excellence.
+                Experience the finest tobacco blends from around the world.
+              </p>
+            </div>
+            <div class="footer-social">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a
+                  href="https://www.instagram.com/hamiltoncigars?igsh=MW1hYWJxNnRzMTJsNg=="
+                  class="social-link"
+                  title="Instagram"
+                >
                   <svg
                     width="20"
                     height="20"
@@ -279,7 +327,11 @@ button {
                     />
                   </svg>
                 </a>
-                <a href="https://www.facebook.com/HamiltonCigars" class="social-link" title="Facebook">
+                <a
+                  href="https://www.facebook.com/HamiltonCigars"
+                  class="social-link"
+                  title="Facebook"
+                >
                   <svg
                     width="20"
                     height="20"
@@ -292,86 +344,93 @@ button {
                   </svg>
                 </a>
               </div>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <div class="footer-section">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <!-- <li><a href="flavors.html">Flavors</a></li> -->
-                            <li><a href="events.html">Events</a></li>
-                            <!-- <li><a href="contact.html">Contact</a></li> -->
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Contact</h4>
-                        <p><a href="mailto:orders@hamiltoncigars.com">orders@hamiltoncigars.com</a></p>
-                    </div>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Hamilton Cigars. All rights reserved.</p>
+          </div>
+          <div class="footer-right">
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="flavors.html">Flavors</a></li> -->
+                <li><a href="events.html">Events</a></li>
+                <!-- <li><a href="contact.html">Contact</a></li> -->
+              </ul>
             </div>
+            <div class="footer-section">
+              <h4>Contact</h4>
+              <p>
+                <a href="mailto:orders@hamiltoncigars.com"
+                  >orders@hamiltoncigars.com</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Hamilton Cigars. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+      // Mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Newsletter form
+      const newsletterForm = document.querySelector(".newsletter-form");
+      newsletterForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Thank you for subscribing to Hamilton Cigars newsletter!");
+        newsletterForm.reset();
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
         });
+      });
 
-        // Newsletter form
-        const newsletterForm = document.querySelector('.newsletter-form');
-        newsletterForm.addEventListener('submit', (e) => {
+      document.querySelectorAll(".overlay-button").forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const buttonText = this.textContent.trim();
+          const cardTitle =
+            this.closest(".flavor-card").querySelector("h3").textContent;
+
+          // Show an alert for demo purposes
+          alert(
+            `${buttonText} clicked for ${cardTitle}!\n\nThis would normally navigate to the ${buttonText.toLowerCase()} page.`
+          );
+        });
+      });
+
+      // Add keyboard accessibility
+      document.querySelectorAll(".flavor-card").forEach((card) => {
+        card.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
-            alert('Thank you for subscribing to Hamilton Cigars newsletter!');
-            newsletterForm.reset();
+            const firstButton = this.querySelector(".overlay-button");
+            if (firstButton) {
+              firstButton.click();
+            }
+          }
         });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-         document.querySelectorAll('.overlay-button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const buttonText = this.textContent.trim();
-                const cardTitle = this.closest('.flavor-card').querySelector('h3').textContent;
-                
-                // Show an alert for demo purposes
-                alert(`${buttonText} clicked for ${cardTitle}!\n\nThis would normally navigate to the ${buttonText.toLowerCase()} page.`);
-            });
-        });
-
-        // Add keyboard accessibility
-        document.querySelectorAll('.flavor-card').forEach(card => {
-            card.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    const firstButton = this.querySelector('.overlay-button');
-                    if (firstButton) {
-                        firstButton.click();
-                    }
-                }
-            });
-            
-            // Make cards focusable
-            card.setAttribute('tabindex', '0');
-        });
+        // Make cards focusable
+        card.setAttribute("tabindex", "0");
+      });
     </script>
-</body>
+  </body>
 </html>

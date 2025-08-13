@@ -1,532 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Hamilton Cigars - Luxury Cigar Heritage & Craftsmanship</title>
-    <meta name="description" content="Discover the heritage and craftsmanship behind Hamilton Cigars. Learn about our commitment to excellence, premium tobacco sourcing, and luxury cigar traditions.">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-<style>
-@font-face {
-    font-family: 'Beautiful Feelings';
-    src: url('./fonts/beautifulfeelings.ttf') format('truetype'),
-    url('./fonts/beautifulfeelings.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-h1, h2, h3, h4, h5, h6,
-.section-title,
-.hero-content h1,
-.flavor-content h3,
-.newsletter-content h2,
-.footer-section h4 {
-    font-family: 'Beautiful Feelings', serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.nav-menu .nav-link {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #C8AE6A;
-    font-size: 0.8rem;
-}
-
-/* Update body text to use Raleway */
-body,
-p,
-.nav-link,
-.dominican-description,
-.story-description,
-.founder-description,
-.founder-quote,
-.craftsmanship-description,
-.member-description,
-.footer-brand p,
-.footer-section p,
-.footer-section ul li a,
-.footer-bottom p {
-    font-family: 'Raleway', sans-serif;
-    color: #d6c28f;
-}
-
-.hamburger.active + .nav-menu .nav-link {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #C8AE6A;
-    font-size: 0.8rem;
-}
-
-</style>
-    <link rel="stylesheet" href="styles.css">
+    <meta
+      name="description"
+      content="Discover the heritage and craftsmanship behind Hamilton Cigars. Learn about our commitment to excellence, premium tobacco sourcing, and luxury cigar traditions."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        /* Additional styles for the new sections */
-        .dominican-heritage {
-            padding: 80px 0;
-    
-        }
+      @font-face {
+        font-family: "Beautiful Feelings";
+        src: url("./fonts/beautifulfeelings.ttf") format("truetype"),
+          url("./fonts/beautifulfeelings.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-        .dominican-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .section-title,
+      .hero-content h1,
+      .flavor-content h3,
+      .newsletter-content h2,
+      .footer-section h4 {
+        font-family: "Beautiful Feelings", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-        .dominican-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: #D4AF37;
-            margin-bottom: 1.5rem;
-        }
+      .nav-menu .nav-link {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #c8ae6a;
+        font-size: 0.8rem;
+      }
 
-        .dominican-description {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #ccc;
-            margin-bottom: 1.5rem;
-        }
+      /* Update body text to use Raleway */
+      body,
+      p,
+      .nav-link,
+      .dominican-description,
+      .story-description,
+      .founder-description,
+      .founder-quote,
+      .craftsmanship-description,
+      .member-description,
+      .footer-brand p,
+      .footer-section p,
+      .footer-section ul li a,
+      .footer-bottom p {
+        font-family: "Raleway", sans-serif;
+        color: #d6c28f;
+      }
 
-        .dominican-image img {
-            width: 100%;
-            height: auto; /* Changed from fixed height to auto */
-            min-height: 300px; /* Minimum height to maintain layout */
-            object-fit: contain; /* Changed from cover to contain to show full image */
-            border-radius: 10px;
-            background-color: #111; /* Add background color for letterboxing if needed */
-        }
-
-        .founder-note {
-            padding: 80px 0;
-         
-        }
-
-        .founder-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .founder-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: #D4AF37;
-            margin-bottom: 1.5rem;
-        }
-
-        .founder-description {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #ccc;
-            margin-bottom: 1.5rem;
-        }
-
-        .founder-quote {
-            font-size: 1.1rem;
-            font-style: italic;
-            color: #D4AF37;
-            margin: 1.5rem 0;
-            padding: 1rem 0;
-            border-left: 3px solid #D4AF37;
-            padding-left: 1.5rem;
-        }
-
-        .founder-image img {
-            width: 100%;
-            height: auto; /* Changed from fixed height to auto */
-            min-height: 300px; /* Minimum height to maintain layout */
-            object-fit: contain; /* Changed from cover to contain to show full image */
-            border-radius: 10px;
-            background-color: #111; /* Add background color for letterboxing if needed */
-        }
-
-.brand-statement {
-    font-weight: 900;
-    font-size: 1.2rem;
-    color: #D4AF37;
-    margin-top: 2rem;
-    text-align: center;
-    padding: 2rem;
-    background-image: url('images/back2.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: hidden; /* Hide overflow if needed */
-}
-
-        /* Additional image fixes */
- .story-image img {
-    width: 100%;
-    height: auto;
-    min-height: 300px;
-    object-fit: contain; /* Add this line that was missing */
-    border-radius: 10px;
-    background-color: #111; /* Add this line that was missing */
-}
-
-        @media (max-width: 768px) {
-    .story-image img {
-        min-height: 200px; /* Reduce minimum height on mobile */
-    }
-}
-        /* Craftsmanship section image fix */
-        .craftsmanship-image img {
-            width: 100%;
-            height: auto; /* Changed from fixed height to auto */
-            min-height: 300px; /* Minimum height to maintain layout */
-            object-fit: contain; /* Changed from cover to contain to show full image */
-            border-radius: 10px;
-            background-color: #111; /* Add background color for letterboxing if needed */
-        }
-
-        /* Team member images fix - FIXED VERSION */
-        .member-image {
-            width: 100%;
-            height: 250px; /* Fixed height for consistent card layout */
-            overflow: hidden;
-            border-radius: 10px;
-            background-color: #111;
-            margin-bottom: 1rem; /* Add space between image and content */
-        }
-
-        .member-image img {
-            width: 100%;
-            height: 100%; /* Fill the container height */
-            object-fit: cover; /* Use cover to fill the container while maintaining aspect ratio */
-            border-radius: 10px;
-        }
-
-        /* Product card images fix */
-        .product-image img {
-            width: 100%;
-            height: auto; /* Changed from fixed height to auto */
-            min-height: 200px; /* Minimum height to maintain layout */
-            object-fit: contain; /* Changed from cover to contain to show full image */
-            background-color: #111; /* Add background color for letterboxing if needed */
-        }
-
-        /* Flavor card images fix */
-        .flavor-image img {
-            width: 100%;
-            height: auto; /* Changed from fixed height to auto */
-            min-height: 150px; /* Minimum height to maintain layout */
-            object-fit: contain; /* Changed from cover to contain to show full image */
-            background-color: #111; /* Add background color for letterboxing if needed */
-            transition: transform 0.3s ease;
-        }
-
-        /* Alternative: If you want images to fill width but maintain aspect ratio */
-        .full-width-image {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            border-radius: 10px;
-            display: block;
-        }
-
-        /* Container adjustments to ensure proper image display */
-        .dominican-image,
-        .founder-image,
-        .story-image,
-        .craftsmanship-image {
-            overflow: visible; /* Changed from hidden to visible */
-
-        }
-
-        .product-image,
-        .flavor-image {
-            overflow: visible; /* Changed from hidden to visible */
-            border-radius: 10px;
-            background-color: #111;
-        }
-
-        /* Team section improvements */
-        .team-member {
-            background-color: #1a1a1a;
-            border-radius: 15px;
-            padding: 1.5rem;
-            transition: transform 0.3s ease;
-        }
-
-        .team-member:hover {
-            transform: translateY(-5px);
-        }
-
-        .member-info {
-            text-align: center;
-        }
-
-        .member-title {
-            color: #D4AF37;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .member-description {
-            color: #ccc;
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .dominican-content,
-            .founder-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .dominican-title,
-            .founder-title {
-                font-size: 2rem;
-            }
-
-            .brand-statement {
-        font-size: 1rem; /* Smaller font on mobile */
-        padding: 1.5rem 1rem; /* Reduce padding */
-        white-space: normal; /* Allow wrapping on very small screens if needed */
-    }
-
-    .member-image {
-        height: 200px; /* Smaller height on mobile */
-    }
-
-    @media (max-width: 480px) {
-    .brand-statement {
-        font-size: 0.9rem; /* Even smaller on very small screens */
-        padding: 1rem 0.5rem;
-    }
-
-    .member-image {
-        height: 180px; /* Even smaller on very small screens */
-    }
-}
-        }
+      .hamburger.active + .nav-menu .nav-link {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #c8ae6a;
+        font-size: 0.8rem;
+      }
     </style>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Additional styles for the new sections */
+      .dominican-heritage {
+        padding: 80px 0;
+      }
+
+      .dominican-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .dominican-title {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: #d4af37;
+        margin-bottom: 1.5rem;
+      }
+
+      .dominican-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+      }
+
+      .dominican-image img {
+        width: 100%;
+        height: auto; /* Changed from fixed height to auto */
+        min-height: 300px; /* Minimum height to maintain layout */
+        object-fit: contain; /* Changed from cover to contain to show full image */
+        border-radius: 10px;
+        background-color: #111; /* Add background color for letterboxing if needed */
+      }
+
+      .founder-note {
+        padding: 80px 0;
+      }
+
+      .founder-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .founder-title {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: #d4af37;
+        margin-bottom: 1.5rem;
+      }
+
+      .founder-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+      }
+
+      .founder-quote {
+        font-size: 1.1rem;
+        font-style: italic;
+        color: #d4af37;
+        margin: 1.5rem 0;
+        padding: 1rem 0;
+        border-left: 3px solid #d4af37;
+        padding-left: 1.5rem;
+      }
+
+      .founder-image img {
+        width: 100%;
+        height: auto; /* Changed from fixed height to auto */
+        min-height: 300px; /* Minimum height to maintain layout */
+        object-fit: contain; /* Changed from cover to contain to show full image */
+        border-radius: 10px;
+        background-color: #111; /* Add background color for letterboxing if needed */
+      }
+
+      .brand-statement {
+        font-weight: 900;
+        font-size: 1.2rem;
+        color: #d4af37;
+        margin-top: 2rem;
+        text-align: center;
+        padding: 2rem;
+        background-image: url("images/back2.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        white-space: nowrap; /* Prevent line breaks */
+        overflow: hidden; /* Hide overflow if needed */
+      }
+
+      /* Additional image fixes */
+      .story-image img {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        object-fit: contain; /* Add this line that was missing */
+        border-radius: 10px;
+        background-color: #111; /* Add this line that was missing */
+      }
+
+      @media (max-width: 768px) {
+        .story-image img {
+          min-height: 200px; /* Reduce minimum height on mobile */
+        }
+      }
+      /* Craftsmanship section image fix */
+      .craftsmanship-image img {
+        width: 100%;
+        height: auto; /* Changed from fixed height to auto */
+        min-height: 300px; /* Minimum height to maintain layout */
+        object-fit: contain; /* Changed from cover to contain to show full image */
+        border-radius: 10px;
+        background-color: #111; /* Add background color for letterboxing if needed */
+      }
+
+      /* Team member images fix - FIXED VERSION */
+      .member-image {
+        width: 100%;
+        height: 250px; /* Fixed height for consistent card layout */
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #111;
+        margin-bottom: 1rem; /* Add space between image and content */
+      }
+
+      .member-image img {
+        width: 100%;
+        height: 100%; /* Fill the container height */
+        object-fit: cover; /* Use cover to fill the container while maintaining aspect ratio */
+        border-radius: 10px;
+      }
+
+      /* Product card images fix */
+      .product-image img {
+        width: 100%;
+        height: auto; /* Changed from fixed height to auto */
+        min-height: 200px; /* Minimum height to maintain layout */
+        object-fit: contain; /* Changed from cover to contain to show full image */
+        background-color: #111; /* Add background color for letterboxing if needed */
+      }
+
+      /* Flavor card images fix */
+      .flavor-image img {
+        width: 100%;
+        height: auto; /* Changed from fixed height to auto */
+        min-height: 150px; /* Minimum height to maintain layout */
+        object-fit: contain; /* Changed from cover to contain to show full image */
+        background-color: #111; /* Add background color for letterboxing if needed */
+        transition: transform 0.3s ease;
+      }
+
+      /* Alternative: If you want images to fill width but maintain aspect ratio */
+      .full-width-image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 10px;
+        display: block;
+      }
+
+      /* Container adjustments to ensure proper image display */
+      .dominican-image,
+      .founder-image,
+      .story-image,
+      .craftsmanship-image {
+        overflow: visible; /* Changed from hidden to visible */
+      }
+
+      .product-image,
+      .flavor-image {
+        overflow: visible; /* Changed from hidden to visible */
+        border-radius: 10px;
+        background-color: #111;
+      }
+
+      /* Team section improvements */
+      .team-member {
+        background-color: #1a1a1a;
+        border-radius: 15px;
+        padding: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .team-member:hover {
+        transform: translateY(-5px);
+      }
+
+      .member-info {
+        text-align: center;
+      }
+
+      .member-title {
+        color: #d4af37;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      .member-description {
+        color: #ccc;
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .dominican-content,
+        .founder-content {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .dominican-title,
+        .founder-title {
+          font-size: 2rem;
+        }
+
+        .brand-statement {
+          font-size: 1rem; /* Smaller font on mobile */
+          padding: 1.5rem 1rem; /* Reduce padding */
+          white-space: normal; /* Allow wrapping on very small screens if needed */
+        }
+
+        .member-image {
+          height: 200px; /* Smaller height on mobile */
+        }
+
+        @media (max-width: 480px) {
+          .brand-statement {
+            font-size: 0.9rem; /* Even smaller on very small screens */
+            padding: 1rem 0.5rem;
+          }
+
+          .member-image {
+            height: 180px; /* Even smaller on very small screens */
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="images/logo.png" alt="Hamilton Cigars Logo" class="nav-logo-img">
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
-                <!-- <li class="nav-item"><a href="flavors.html" class="nav-link">Flavors</a></li> -->
-                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="images/logo.png"
+            alt="Hamilton Cigars Logo"
+            class="nav-logo-img"
+          />
         </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="shop.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active">About</a>
+          </li>
+          <!-- <li class="nav-item"><a href="flavors.html" class="nav-link">Flavors</a></li> -->
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Events</a>
+          </li>
+          <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <main class="main-content">
-        <div class="container">
-            <div class="page-header">
-                <h1 class="page-title">Our Legacy</h1>
+      <div class="container">
+        <div class="page-header">
+          <h1 class="page-title">Our Legacy</h1>
+        </div>
+
+        <section class="dominican-heritage">
+          <div class="dominican-content">
+            <div class="dominican-text">
+              <h2 class="dominican-title">
+                Elevated Tradition: The Art of Hamilton Cigars
+              </h2>
+              <p class="dominican-description">
+                At Hamilton Cigars, every detail is deliberate. Our story is one
+                of legacy, refinement, and devotion to the timeless craft of
+                cigar making. Rooted in generations of expertise, we fuse
+                heritage with modern sophistication to create cigars that speak
+                to those who appreciate the finer things in life.
+              </p>
+              <p class="dominican-description">
+                Each cigar is a symphony of balance and boldness—expertly aged
+                leaves, hand-rolled with care, curated for the discerning
+                palate. From the first draw to the final note, every experience
+                is designed to indulge, impress, and endure.
+              </p>
+              <p class="dominican-description">
+                This isn't just a cigar. It's a celebration of craftsmanship, a
+                statement of taste, and an invitation to savor the
+                extraordinary. Welcome to Hamilton Cigars—where luxury is not an
+                option, it's the standard.
+              </p>
             </div>
+            <div class="dominican-image">
+              <img
+                src="images/about.jpeg"
+                alt="Dominican Republic tobacco fields and cigar heritage"
+              />
+            </div>
+          </div>
+        </section>
 
-            <section class="dominican-heritage">
-                <div class="dominican-content">
-                    <div class="dominican-text">
-                        <h2 class="dominican-title">Elevated Tradition: The Art of Hamilton Cigars</h2>
-                        <p class="dominican-description">
-                            At Hamilton Cigars, every detail is deliberate. Our story is one of legacy, refinement, and devotion to the timeless craft of cigar making. Rooted in generations of expertise, we fuse heritage with modern sophistication to create cigars that speak to those who appreciate the finer things in life.
-                        </p>
-                        <p class="dominican-description">
-                            Each cigar is a symphony of balance and boldness—expertly aged leaves, hand-rolled with care, curated for the discerning palate. From the first draw to the final note, every experience is designed to indulge, impress, and endure.
-                        </p>
-                        <p class="dominican-description">
-                            This isn't just a cigar. It's a celebration of craftsmanship, a statement of taste, and an invitation to savor the extraordinary. Welcome to Hamilton Cigars—where luxury is not an option, it's the standard.
-                        </p>
-                    </div>
-                    <div class="dominican-image">
-                        <img src="images/about.jpeg" alt="Dominican Republic tobacco fields and cigar heritage">
-                    </div>
-                </div>
-            </section>
+        <section class="story-section">
+          <div class="story-content">
+            <div class="story-text">
+              <h2 class="story-title">The Hamilton Heritage</h2>
+              <p class="story-description">
+                At Hamilton Cigars, heritage isn't something we inherited — it's
+                something we're creating. Founded in 2025, our brand was born
+                from a deep appreciation for timeless craftsmanship and a bold
+                vision to redefine modern cigar luxury.
+              </p>
+              <p class="story-description">
+                We honor the traditions of cigar artistry not by simply
+                repeating the past, but by elevating it. Every Hamilton cigar is
+                crafted with care, precision, and purpose — using master
+                blending techniques, premium aged leaves, and an unwavering
+                commitment to excellence.
+              </p>
+              <p class="story-description">
+                Though our name is new, our standards are rooted in legacy. From
+                first spark to final draw, we deliver more than a cigar — we
+                deliver an experience made for those who demand distinction.
+                Hamilton Cigars: A new legacy, rolled with intention.
+              </p>
+            </div>
+            <div class="story-image">
+              <img
+                src="images/about1.jpeg"
+                alt="Hamilton Cigars Heritage - Vintage tobacco processing facility"
+              />
+            </div>
+          </div>
+        </section>
 
-            <section class="story-section">
-                <div class="story-content">
-                    <div class="story-text">
-                        <h2 class="story-title">The Hamilton Heritage</h2>
-                        <p class="story-description">
-                            At Hamilton Cigars, heritage isn't something we inherited — it's something we're creating. Founded in 2025, our brand was born from a deep appreciation for timeless craftsmanship and a bold vision to redefine modern cigar luxury.
-                        </p>
-                        <p class="story-description">
-                            We honor the traditions of cigar artistry not by simply repeating the past, but by elevating it. Every Hamilton cigar is crafted with care, precision, and purpose — using master blending techniques, premium aged leaves, and an unwavering commitment to excellence.
-                        </p>
-                        <p class="story-description">
-                            Though our name is new, our standards are rooted in legacy. From first spark to final draw, we deliver more than a cigar — we deliver an experience made for those who demand distinction. Hamilton Cigars: A new legacy, rolled with intention.
-                        </p>
-                    </div>
-                    <div class="story-image">
-                        <img src="images/about1.jpeg" alt="Hamilton Cigars Heritage - Vintage tobacco processing facility">
-                    </div>
-                </div>
-            </section>
+        <section class="founder-note">
+          <div class="founder-content">
+            <div class="founder-image">
+              <img
+                src="images/about3.jpeg"
+                alt="Hamilton Hyppolite - Founder of Hamilton Cigars"
+              />
+            </div>
+            <div class="founder-text">
+              <h2 class="founder-title">
+                A Founder's Note: From Brooklyn to the Barrel Room
+              </h2>
+              <p class="founder-description">
+                I'm Hamilton Hyppolite—New Yorker by heart, Haitian by heritage,
+                and now rooted in the vibrant pulse of Atlanta. My journey has
+                always been about balance: honoring where I come from while
+                boldly shaping where I'm headed.
+              </p>
+              <p class="founder-description">
+                Hamilton Cigars was born out of more than passion—it was born
+                from purpose. As a father, visionary, and curator of culture, I
+                wanted to create something that felt intentional. A cigar not
+                just for the smoke, but for the moment. A brand that bridges
+                generations, celebrates craftsmanship, and invites you to slow
+                down, reflect, and savor.
+              </p>
+              <p class="founder-description">
+                This isn't just about cigars. It's about creating a
+                ritual—refined, meaningful, and distinctly yours. Welcome to
+                Hamilton Cigars.
+              </p>
+              <p class="founder-quote">
+                "This brand is my love letter to culture, to legacy, and to
+                every man or woman finding peace in their own rhythm."
+              </p>
+              <p class="founder-quote">
+                "As a father of two daughters, everything I build has to stand
+                the test of time. Hamilton Cigars is more than a product—it's a
+                standard. A mark of excellence my daughters can one day be proud
+                of."
+              </p>
+              <p class="founder-description">— Hamilton Hyppolite</p>
+            </div>
+          </div>
+          <div class="brand-statement">
+            <strong>This isn't just a cigar. This is a lifestyle.</strong>
+          </div>
+        </section>
 
-            <section class="founder-note">
-                <div class="founder-content">
-                    <div class="founder-image">
-                        <img src="images/about3.jpeg" alt="Hamilton Hyppolite - Founder of Hamilton Cigars">
-                    </div>
-                    <div class="founder-text">
-                        <h2 class="founder-title">A Founder's Note: From Brooklyn to the Barrel Room</h2>
-                        <p class="founder-description">
-                            I'm Hamilton Hyppolite—New Yorker by heart, Haitian by heritage, and now rooted in the vibrant pulse of Atlanta. My journey has always been about balance: honoring where I come from while boldly shaping where I'm headed.
-                        </p>
-                        <p class="founder-description">
-                            Hamilton Cigars was born out of more than passion—it was born from purpose. As a father, visionary, and curator of culture, I wanted to create something that felt intentional. A cigar not just for the smoke, but for the moment. A brand that bridges generations, celebrates craftsmanship, and invites you to slow down, reflect, and savor.
-                        </p>
-                        <p class="founder-description">
-                            This isn't just about cigars. It's about creating a ritual—refined, meaningful, and distinctly yours. Welcome to Hamilton Cigars.
-                        </p>
-                        <p class="founder-quote">
-                            "This brand is my love letter to culture, to legacy, and to every man or woman finding peace in their own rhythm."
-                        </p>
-                        <p class="founder-quote">
-                            "As a father of two daughters, everything I build has to stand the test of time. Hamilton Cigars is more than a product—it's a standard. A mark of excellence my daughters can one day be proud of."
-                        </p>
-                        <p class="founder-description">
-                            — Hamilton Hyppolite
-                        </p>
-                    </div>
-                </div>
-                <div class="brand-statement">
-                    <strong>This isn't just a cigar. This is a lifestyle.</strong>
-                </div>
-            </section>
-
-            <section class="craftsmanship-section">
-                <div class="craftsmanship-content">
-                    <div class="craftsmanship-image">
-                        <img src="images/about2.jpeg" alt="Master cigar roller crafting premium Hamilton cigars">
-                    </div>
-                    <div class="craftsmanship-text">
-                        <h2 class="craftsmanship-title">Artisan Craftsmanship</h2>
-                        <p class="craftsmanship-description">
-                            Every Hamilton cigar is hand-rolled by master artisans who have dedicated their lives to perfecting their craft. Our tobacco is sourced from the world's premier growing regions, aged in cedar-lined rooms for a minimum of three years, and carefully selected for consistency and flavor profile.
-                        </p>
-                        <p class="craftsmanship-description">
-                            From the fertile valleys of Nicaragua to the sun-drenched fields of the Dominican Republic, we work exclusively with generational tobacco farmers who share our commitment to excellence. Each leaf is inspected, sorted, and aged using methods unchanged since our founding.
-                        </p>
-                    </div>
-                </div>
-            </section>
- <section class="values-section">
-        <div class="container">
+        <section class="craftsmanship-section">
+          <div class="craftsmanship-content">
+            <div class="craftsmanship-image">
+              <img
+                src="images/about2.jpeg"
+                alt="Master cigar roller crafting premium Hamilton cigars"
+              />
+            </div>
+            <div class="craftsmanship-text">
+              <h2 class="craftsmanship-title">Artisan Craftsmanship</h2>
+              <p class="craftsmanship-description">
+                Every Hamilton cigar is hand-rolled by master artisans who have
+                dedicated their lives to perfecting their craft. Our tobacco is
+                sourced from the world's premier growing regions, aged in
+                cedar-lined rooms for a minimum of three years, and carefully
+                selected for consistency and flavor profile.
+              </p>
+              <p class="craftsmanship-description">
+                From the fertile valleys of Nicaragua to the sun-drenched fields
+                of the Dominican Republic, we work exclusively with generational
+                tobacco farmers who share our commitment to excellence. Each
+                leaf is inspected, sorted, and aged using methods unchanged
+                since our founding.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="values-section">
+          <div class="container">
             <div class="values-header">
-                <h2 class="section-title">Our Values</h2>
+              <h2 class="section-title">Our Values</h2>
             </div>
             <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <div class="icon-circle">
-                            <svg class="quality-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2"/>
-                                <rect x="6" y="6" width="4" height="12" fill="currentColor"/>
-                                <rect x="14" y="6" width="4" height="12" fill="currentColor"/>
-                                <rect x="10" y="6" width="4" height="12" fill="currentColor"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Uncompromising Quality</h3>
-                    <p>Every cigar meets our exacting standards before earning the Hamilton name. We reject more cigars than we sell, ensuring only perfection reaches our customers.</p>
+              <div class="value-card">
+                <div class="value-icon">
+                  <div class="icon-circle">
+                    <svg
+                      class="quality-icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                      <rect
+                        x="6"
+                        y="6"
+                        width="4"
+                        height="12"
+                        fill="currentColor"
+                      />
+                      <rect
+                        x="14"
+                        y="6"
+                        width="4"
+                        height="12"
+                        fill="currentColor"
+                      />
+                      <rect
+                        x="10"
+                        y="6"
+                        width="4"
+                        height="12"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">
-                        <div class="icon-circle">
-                            <svg class="tradition-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M12 2v20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M7 7l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M17 7L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <circle cx="12" cy="12" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Traditional Methods</h3>
-                    <p>Hand-rolling techniques passed down through generations combined with modern aging processes create cigars of exceptional complexity and character.</p>
-                </div>
-                
-                <div class="value-card">
-                    <div class="value-icon">
-                        <div class="icon-circle">
-                            <svg class="sustainability-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2c-4.4 0-8 3.6-8 8 0 5.4 8 12 8 12s8-6.6 8-12c0-4.4-3.6-8-8-8z" fill="none" stroke="currentColor" stroke-width="2"/>
-                                <path d="M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M10 10l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M14 10l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Sustainable Excellence</h3>
-                    <p>We partner with farmers who practice sustainable agriculture, ensuring the finest tobacco while preserving the land for future generations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <h3>Uncompromising Quality</h3>
+                <p>
+                  Every cigar meets our exacting standards before earning the
+                  Hamilton name. We reject more cigars than we sell, ensuring
+                  only perfection reaches our customers.
+                </p>
+              </div>
 
-            <section class="team-section">
-                <div class="team-header">
-                    <h2 class="section-title">Master Craftsmen</h2>
-                    <p class="team-description">Meet the artisans who bring Hamilton Cigars to life</p>
+              <div class="value-card">
+                <div class="value-icon">
+                  <div class="icon-circle">
+                    <svg
+                      class="tradition-icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 12h20"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M12 2v20"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M7 7l10 10"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M17 7L7 17"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="12" cy="12" r="3" fill="currentColor" />
+                    </svg>
+                  </div>
                 </div>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="images/masterroller.png" alt="Eduardo Martinez - Master Roller">
-                        </div>
-                        <div class="member-info">
-                           
-                            <p class="member-title">Master Roller</p>
-                            <p class="member-description">Our master rolling team brings over 30 years of combined expertise to every cigar produced. With hands trained by tradition and eyes sharpened by experience, each cigar is rolled with care, consistency, and character. This is not factory-line work—this is a craft passed down and perfected. Every Hamilton cigar carries the fingerprint of excellence and the steady rhythm of human hands.</p>
-                        </div>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="images/roller.png" alt="Maria Santos - Tobacco Master">
-                        </div>
-                        <div class="member-info">
-                           
-                            <p class="member-title">Tobacco Master</p>
-                            <p class="member-description">Behind the bold aroma and layered flavor of each Hamilton cigar is a team dedicated to the art of tobacco selection and aging. Our experts study each leaf—its texture, color, and scent—curating blends that speak to both legacy and innovation. From seed to smoke, this is a journey of intention, ensuring that what you taste is nothing short of remarkable.</p>
-                        </div>
-                    </div>
+                <h3>Traditional Methods</h3>
+                <p>
+                  Hand-rolling techniques passed down through generations
+                  combined with modern aging processes create cigars of
+                  exceptional complexity and character.
+                </p>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon">
+                  <div class="icon-circle">
+                    <svg
+                      class="sustainability-icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2c-4.4 0-8 3.6-8 8 0 5.4 8 12 8 12s8-6.6 8-12c0-4.4-3.6-8-8-8z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M12 8v8"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M8 12h8"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M10 10l4 4"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M14 10l-4 4"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
                 </div>
-            </section>
-        </div>
+                <h3>Sustainable Excellence</h3>
+                <p>
+                  We partner with farmers who practice sustainable agriculture,
+                  ensuring the finest tobacco while preserving the land for
+                  future generations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="team-section">
+          <div class="team-header">
+            <h2 class="section-title">Master Craftsmen</h2>
+            <p class="team-description">
+              Meet the artisans who bring Hamilton Cigars to life
+            </p>
+          </div>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-image">
+                <img
+                  src="images/masterroller.png"
+                  alt="Eduardo Martinez - Master Roller"
+                />
+              </div>
+              <div class="member-info">
+                <p class="member-title">Master Roller</p>
+                <p class="member-description">
+                  Our master rolling team brings over 30 years of combined
+                  expertise to every cigar produced. With hands trained by
+                  tradition and eyes sharpened by experience, each cigar is
+                  rolled with care, consistency, and character. This is not
+                  factory-line work—this is a craft passed down and perfected.
+                  Every Hamilton cigar carries the fingerprint of excellence and
+                  the steady rhythm of human hands.
+                </p>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-image">
+                <img
+                  src="images/roller.png"
+                  alt="Maria Santos - Tobacco Master"
+                />
+              </div>
+              <div class="member-info">
+                <p class="member-title">Tobacco Master</p>
+                <p class="member-description">
+                  Behind the bold aroma and layered flavor of each Hamilton
+                  cigar is a team dedicated to the art of tobacco selection and
+                  aging. Our experts study each leaf—its texture, color, and
+                  scent—curating blends that speak to both legacy and
+                  innovation. From seed to smoke, this is a journey of
+                  intention, ensuring that what you taste is nothing short of
+                  remarkable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
- <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <div class="footer-brand">
-                        <img src="images/logo.png" alt="Hamilton Cigars Logo" class="footer-logo">
-                        <p>Premium luxury cigars crafted with tradition and excellence. Experience the finest tobacco blends from around the world.</p>
-                    </div>
-                    <div class="footer-social">
-                        <h4>Follow Us</h4>
-                         <div class="social-links">
-                <a href="https://www.instagram.com/hamiltoncigars?igsh=MW1hYWJxNnRzMTJsNg==" class="social-link" title="Instagram">
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-brand">
+              <img
+                src="images/logo.png"
+                alt="Hamilton Cigars Logo"
+                class="footer-logo"
+              />
+              <p>
+                Premium luxury cigars crafted with tradition and excellence.
+                Experience the finest tobacco blends from around the world.
+              </p>
+            </div>
+            <div class="footer-social">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a
+                  href="https://www.instagram.com/hamiltoncigars?igsh=MW1hYWJxNnRzMTJsNg=="
+                  class="social-link"
+                  title="Instagram"
+                >
                   <svg
                     width="20"
                     height="20"
@@ -538,7 +738,11 @@ p,
                     />
                   </svg>
                 </a>
-                <a href="https://www.facebook.com/HamiltonCigars" class="social-link" title="Facebook">
+                <a
+                  href="https://www.facebook.com/HamiltonCigars"
+                  class="social-link"
+                  title="Facebook"
+                >
                   <svg
                     width="20"
                     height="20"
@@ -551,54 +755,57 @@ p,
                   </svg>
                 </a>
               </div>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <div class="footer-section">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <!-- <li><a href="flavors.html">Flavors</a></li> -->
-                            <li><a href="events.html">Events</a></li>
-                            <!-- <li><a href="contact.html">Contact</a></li> -->
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Contact</h4>
-                        <p><a href="mailto:orders@hamiltoncigars.com">orders@hamiltoncigars.com</a></p>
-                    </div>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Hamilton Cigars. All rights reserved.</p>
+          </div>
+          <div class="footer-right">
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="flavors.html">Flavors</a></li> -->
+                <li><a href="events.html">Events</a></li>
+                <!-- <li><a href="contact.html">Contact</a></li> -->
+              </ul>
             </div>
+            <div class="footer-section">
+              <h4>Contact</h4>
+              <p>
+                <a href="mailto:orders@hamiltoncigars.com"
+                  >orders@hamiltoncigars.com</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Hamilton Cigars. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
-
     <script>
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
+      // Mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
             });
+          }
         });
+      });
     </script>
-</body>
+  </body>
 </html>
