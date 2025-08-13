@@ -902,10 +902,7 @@ body::before {
                 font-size: 2.5rem;
             }
 
-            .product-image img {
-            width: 100%;
-            height: 150px;
-            }
+            
             
             .values-grid {
                 grid-template-columns: 1fr;
@@ -1959,11 +1956,6 @@ body::before {
 @media (max-width: 480px) {
     .featured-event-title {
         font-size: 1.8rem;
-    }
-
-    .product-image img {
-        width: 100%;
-        height: 120px;
     }
     
     .featured-event-details {
