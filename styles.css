@@ -476,11 +476,15 @@ body::before {
 }
 
 /* Newsletter Section */
-      .newsletter {
-            padding: 60px 0;
-            background: #D58833;
-            text-align: center;
-        }
+     .newsletter {
+    padding: 60px 0;
+    background: url('images/goldgran.png') center center/cover no-repeat;
+    border-radius: 16px;
+    margin: 3rem auto 3rem auto;
+    max-width: 700px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.25);
+    text-align: center;
+}
 
         .newsletter-content h2 {
           
