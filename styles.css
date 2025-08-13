@@ -145,7 +145,7 @@ body::before {
 
 /* Hero Section */
 .hero {
-    background-image: url('hero.png');
+    /* background-image: url('hero.png'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -471,7 +471,7 @@ body::before {
 /* Newsletter Section */
       .newsletter {
             padding: 60px 0;
-            background: linear-gradient(135deg, #D4AF37, #B8941F);
+            background: #D58833;
             text-align: center;
         }
 
