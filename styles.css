@@ -910,9 +910,9 @@ body::before {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            height: 40vh; /* Adjust as needed for your image */
+            height: 50vh; /* Adjust as needed for your image */
             min-height: 320px;
-           
+            padding-top: 40px;
     }
 
             .section-title {
