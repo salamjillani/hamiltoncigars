@@ -910,11 +910,11 @@ body::before {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 60vh; /* Adjust as needed for your image */
+        height: 90vh; /* Adjust as needed for your image */
         min-height: 320px;
         padding-top: 60px;
     }
-    
+
             .section-title {
                 font-size: 2.5rem;
             }
