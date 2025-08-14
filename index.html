@@ -8,6 +8,7 @@
       name="description"
       content="Premium luxury cigars crafted with tradition and excellence. Experience the finest tobacco blends and join our exclusive VIP membership."
     />
+      <link rel="icon" type="image/png" href="images/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
       rel="stylesheet"
@@ -110,6 +111,12 @@
           font-size: 1.5rem;
         }
       }
+
+      @media (max-width: 1024px) {
+  .hero-cta {
+    display: none !important;
+  }
+}
 
       @media (max-width: 480px) {
        .full-width-img {
@@ -280,20 +287,21 @@
 
     <section class="newsletter" id="newsletter">
       <div class="container">
-        <div class="newsletter-content">
-          <h2>Join the Inner Circle</h2>
-          <p>
-            Be the first to know about new releases, exclusive events, and
-            member-only experiences.
-          </p>
-          <p class="newsletter-spam-notice">
-            We hate spam too. Only the good stuff, once or twice a month.
-          </p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" required />
-            <button type="submit" class="submit-btn">Subscribe</button>
-          </form>
-        </div>
+    <div class="newsletter-content">
+  <h2>Join the Inner Circle</h2>
+  <p style="text-align: center; margin-bottom: 0;">
+    Be the first to know about new releases, exclusive events,<br>
+    and member-only experiences.
+  </p>
+  <p class="newsletter-spam-notice" style="text-align: center; margin-top: 0;">
+    We hate spam too.<br>
+    Only the good stuff, once or twice a month.
+  </p>
+  <form class="newsletter-form">
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit" class="submit-btn">Subscribe</button>
+  </form>
+</div>
       </div>
     </section>
 
